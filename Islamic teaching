@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Little Muslim Learners</title>
+
+<style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    body{
+        background:#fffafc;
+        color:#444;
+    }
+
+    header{
+        background:#ffb6d5;
+        color:white;
+        text-align:center;
+        padding:30px;
+    }
+
+    header h1{
+        font-size:2.5rem;
+    }
+
+    nav{
+        background:white;
+        padding:15px;
+        text-align:center;
+        border-bottom:3px solid #ffd6e7;
+    }
+
+    nav a{
+        text-decoration:none;
+        color:#ff69b4;
+        font-weight:bold;
+        margin:0 15px;
+    }
+
+    .hero{
+        text-align:center;
+        padding:50px 20px;
+    }
+
+    .hero h2{
+        color:#ff69b4;
+        margin-bottom:15px;
+    }
+
+    .hero p{
+        max-width:700px;
+        margin:auto;
+        line-height:1.6;
+    }
+
+    .cards{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:20px;
+        padding:40px 20px;
+    }
+
+    .card{
+        background:white;
+        width:280px;
+        padding:25px;
+        border-radius:20px;
+        box-shadow:0 4px 10px rgba(0,0,0,0.1);
+        border:2px solid #ffd6e7;
+        text-align:center;
+    }
+
+    .card h3{
+        color:#ff69b4;
+        margin-bottom:10px;
+    }
+
+    .dua-section{
+        background:#ffe8f2;
+        text-align:center;
+        padding:40px 20px;
+    }
+
+    .dua-section h2{
+        color:#ff69b4;
+        margin-bottom:15px;
+    }
+
+    footer{
+        background:#ffb6d5;
+        color:white;
+        text-align:center;
+        padding:20px;
+        margin-top:30px;
+    }
+
+    button{
+        background:#ff69b4;
+        color:white;
+        border:none;
+        padding:12px 20px;
+        border-radius:30px;
+        cursor:pointer;
+        margin-top:15px;
+    }
+
+    button:hover{
+        background:#ff4fa3;
+    }
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>🌸 Little Muslim Learners 🌸</h1>
+    <p>Learning Islam with Love, Kindness & Fun!</p>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Quran</a>
+    <a href="#">Duas</a>
+    <a href="#">Stories</a>
+    <a href="#">Good Manners</a>
+</nav>
+
+<section class="hero">
+    <h2>Assalamu Alaikum! 💖</h2>
+    <p>
+        Welcome to Little Muslim Learners. Here children can learn about
+        Islam, beautiful duas, Quran lessons, prophets' stories,
+        and good manners in a fun and friendly way.
+    </p>
+</section>
+
+<section class="cards">
+
+    <div class="card">
+        <h3>📖 Quran Time</h3>
+        <p>
+            Learn short surahs and discover the beauty of Allah's words.
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>🤲 Daily Duas</h3>
+        <p>
+            Easy duas for waking up, eating, sleeping, and more.
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>🕌 Islamic Manners</h3>
+        <p>
+            Learn kindness, respect, honesty, and helping others.
+        </p>
+    </div>
+
+</section>
+
+<section class="dua-section">
+    <h2>Dua of the Day 🌷</h2>
+
+    <h3>بِسْمِ اللَّهِ</h3>
+
+    <p>
+        "In the name of Allah"
+    </p>
+
+    <button onclick="showMessage()">
+        I Learned My Dua!
+    </button>
+
+    <p id="message" style="margin-top:15px;font-weight:bold;"></p>
+</section>
+
+<footer>
+    <p>🌸 Little Muslim Learners © 2026 🌸</p>
+</footer>
+
+<script>
+function showMessage(){
+    document.getElementById("message").innerHTML =
+    "MashaAllah! Keep learning and growing every day 💖";
+}
+</script>
+
+</body>
+</html>
